@@ -4,50 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhilash Srivastava - Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        section {
-            padding: 2rem;
-            margin: 1rem auto;
-            max-width: 800px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Abhilash Srivastava</h1>
-        <p>Welcome to my personal website</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm Abhilash, a passionate Machine Learning Engineer...</p>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <p>Here are some of my projects...</p>
-    </section>
+    <main>
+        <section id="home">
+            <h1>Abhilash Srivastava</h1>
+            <p>Welcome to my personal website</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of my projects...</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Here are some of my skills...</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with me...</p>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Abhilash Srivastava</p>
     </footer>
