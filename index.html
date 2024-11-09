@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -20,47 +20,167 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="section">
+        <section id="home" class="section home-section">
             <div class="container">
                 <h1>Abhilash Srivastava</h1>
-                <p>Welcome to my personal website</p>
-            </div>
-        </section>
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Me</h2>
+                <img src="images/profile.png" alt="Profile Photo" class="profile-photo-large">
                 <p>I specialize in building Generative AI applications with a focus on Natural Language Processing (NLP), Machine Learning, Search, and Recommender Systems. Currently, I lead conversation focused machine learning initiatives at Apollo.io, where I develop 0-to-1 sales tech products that drive revenue and innovation.</p>
                 <p>Previously, I delivered high-impact, consumer-facing projects at Meta, Microsoft, Yelp, and Samsung Research. My work spans diverse domains, including Ads Integrity, Search Engines, Content Understanding, and IoT. At Meta, I developed fraud detection systems that improved Facebook Ads' revenue, while at Microsoft, I enhanced Search through Query Understanding and Natural Language Understanding (NLU). Additionally, I contribute to the AI4A (AI for Accessibility) Grants committee and am a reviewer for MLADS (Microsoft ML and Data Science Conference).</p>
                 <p>Throughout my career, I've secured multiple patents and published papers in international conferences. I’m passionate about EdTech and MOOCs, and I actively engage with the Coursera and PyTorch communities.</p>
                 <p>Let's connect if you’re interested in AI, EdTech, or exploring innovative machine-learning solutions!</p>
                 <p>PyTorch Contributions: <a href="https://discuss.pytorch.org/u/abhilash_srivastava/summary">https://discuss.pytorch.org/u/abhilash_srivastava/summary</a></p>
                 <p>GitHub: <a href="https://github.com/abhilashshakti">github.com/abhilashshakti</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/abhilash-srivastava/">linkedin.com/in/abhilash-srivastava</a></p>
                 <p>Contact: <a href="mailto:abhilash.shakti@gmail.com">abhilash.shakti@gmail.com</a></p>
             </div>
         </section>
-        <section id="projects" class="section">
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/apollo-logo.png" alt="Apollo.io Logo" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Apollo.io</h3>
+                                <h4>Senior ML Engineer</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>Aug 2023 - Present</p>
+                        </div>
+                    </div>
+                    <p>Remote</p>
+                    <ul>
+                        <li>Conversational AI: Generate insights and build agents for Apollo using LLMs.</li>
+                        <li>Conversational AI: Improve email quality and build chat interfaces.</li>
+                        <li>Search and recommendation for enterprise users.</li>
+                        <li>Generative AI at Apollo</li>
+                        <li>Favorite tech tools: Github Copilot, LLMs (OpenAI, Gemini, Perplexity), Humanloop, Snowflake, Databricks, Airflow</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/meta-logo.png" alt="Meta Logo" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Meta</h3>
+                                <h4>Senior ML Engineer</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>Apr 2022 - Aug 2023</p>
+                        </div>
+                    </div>
+                    <p>Bellevue, Washington, United States</p>
+                    <ul>
+                        <li>Detecting fraud, cloaking and malicious ads using state-of-the-art machine learning and deep learning techniques. Over 50k malicious accounts blocked every day and $70M saved for Facebook every month.</li>
+                        <li>Analyzing large scale user-engagement data to understand policy-violating clicks and false-discovery rate to improve model transparency. Build high quality Hive pipelines for training data and human labeling queues.</li>
+                        <li>Working in a high-speed team (Ads org) of ML engineers, research scientists, data engineers and data scientists to launch several models every month.</li>
+                        <li>Other responsibilities include on-call rotations, graceful model rollouts, user-privacy protection, roadmap planning, documentation, XFN collaborations, interviewing candidates and boot-camp mentoring.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/microsoft-logo.png" alt="Microsoft Logo" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Microsoft</h3>
+                                <h4>Software Engineer</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>May 2019 - Mar 2022</p>
+                        </div>
+                    </div>
+                    <p>Bellevue, Washington</p>
+                    <ul>
+                        <li>Trained the first DL model (multi-lingual) for enhancing the CTR@1 using enterprise data. Initial improvement of ~4% (across different regions).</li>
+                        <li>Building ranker models and QU models to improve search results for enterprise users in 10+ geo locations and 15+ languages</li>
+                        <li>Built a Language Detection model to support 100+ languages using student-teacher distillation. Teacher model: Roberta-Large as the pretrained model and fine-tuned using Bing query log data [mix of supervised + semi-supervised data]. Student model: char-CNN based model. This Language Detection model will power Search, Relevance, Maps and Office at Microsoft.</li>
+                        <li>Scaling a unified multi-language model (to 100+ languages) for domain classification, intent classification and slot tagging by fine-tuning and pre-training a Universal Encoder (Unicoder) model.</li>
+                        <li>Responsible AI champ for DTP (Digital Transformation Platform)</li>
+                        <li>Reviewer at Microsoft MLADS (Machine Learning & Data Sciences Conference).</li>
+                        <li>Reviewer for Microsoft AI for Accessibility (AI4A).</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/yelp-logo.png" alt="Yelp Logo" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Yelp</h3>
+                                <h4>Software Engineering Intern</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>Jun 2018 - Sep 2018</p>
+                        </div>
+                    </div>
+                    <p>San Francisco Bay Area</p>
+                    <ul>
+                        <li>NER (Named Entity Recognition) to improve the "Popular Dishes" recommendations served at restaurants.</li>
+                        <li>Revamp Yelp Android app with inline text expansion, media carousel and biz owner replies.</li>
+                        <li>Android app performance improvement by the reduction in GPU rendering time and CPU usage</li>
+                        <li>Hackathon: One-shot personalized restaurant recommendation</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/samsung-logo.png" alt="Samsung Logo" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Samsung Electronics</h3>
+                                <h4>Senior Software Engineer</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>Jul 2014 - Aug 2017</p>
+                        </div>
+                    </div>
+                    <p>Bengaluru Area, India</p>
+                    <ul>
+                        <li>End to end development of the Music module of Samsung Carmode Android Application.</li>
+                        <li>Worked in South Korea and interacted closely with the testing team in Germany & China and development team in India for the successful commercialization of Carmode for Samsung NOTE5, S7, NOTE7 and S8.</li>
+                        <li>Assisted in enabling voice support through integration of Samsung Voice inside Carmode.</li>
+                        <li>Worked as an Android Developer in Samsung School v2.0 and Samsung Education SDK (Intelligence Division).</li>
+                        <li>Single-handedly developed the Screen Sharing feature for student-teacher interaction in a smart classroom, through muxing of video and audio streams from MediaCodecs and streaming using Real Time Protocol.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section projects-section">
             <div class="container">
                 <h2>Projects</h2>
                 <p>Here are some of my projects...</p>
             </div>
         </section>
-        <section id="skills" class="section">
+        <section id="skills" class="section skills-section">
             <div class="container">
                 <h2>Skills</h2>
-                <p>Here are some of my skills...</p>
+                <ul>
+                    <li>Natural Language Processing (NLP)</li>
+                    <li>Machine Learning</li>
+                    <li>Search and Recommender Systems</li>
+                    <li>Fraud Detection</li>
+                    <li>Query Understanding</li>
+                    <li>Natural Language Understanding (NLU)</li>
+                    <li>EdTech and MOOCs</li>
+                </ul>
             </div>
         </section>
-        <section id="contact" class="section">
+        <section id="contact" class="section contact-section">
             <div class="container">
                 <h2>Contact</h2>
                 <p>Feel free to reach out to me at <a href="mailto:abhilash.shakti@gmail.com">abhilash.shakti@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/abhilash-srivastava/">linkedin.com/in/abhilash-srivastava</a></p>
             </div>
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <div class="container">
-            <p>&copy; 2023 Abhilash Srivastava. All rights reserved.</p>
+            <p>&copy; 2024 Abhilash Srivastava. All rights reserved.</p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

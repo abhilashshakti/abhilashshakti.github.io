@@ -2,11 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #f0f0f0; /* Whitish text color */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* Gradient background with shades of grey */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #2c3e50;
     padding: 10px 0;
 }
 
@@ -29,25 +30,47 @@ nav ul li a {
 }
 
 .section {
+    position: relative;
     padding: 60px 0;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.8); /* Semi-transparent overlay */
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .container {
+    position: relative;
+    z-index: 2;
     width: 80%;
     margin: 0 auto;
 }
 
 h1, h2 {
     text-align: center;
-    color: #4CAF50;
+    color: #ecf0f1; /* Whitish text color */
 }
 
-p {
+p, ul {
     line-height: 1.6;
+    color: #ecf0f1; /* Whitish text color */
+}
+
+ul {
+    padding-left: 20px;
 }
 
 a {
-    color: #4CAF50;
+    color: #ecf0f1; /* Whitish text color */
     text-decoration: none;
 }
 
@@ -56,11 +79,93 @@ a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 20px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.profile-photo-large {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.experience-item {
+    margin-bottom: 40px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-left {
+    display: flex;
+    align-items: center;
+}
+
+.experience-header img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-details h3, .experience-details h4 {
+    margin: 0;
+    color: #ecf0f1; /* Whitish text color */
+}
+
+.experience-right p {
+    margin: 0;
+    color: #ecf0f1; /* Whitish text color */
+}
+
+.experience-item p {
+    margin-bottom: 10px;
+    color: #ecf0f1; /* Whitish text color */
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #ecf0f1; /* Whitish text color */
+}
+
+/* Background images for sections */
+.home-section {
+    background: url('images/skydiving.png') no-repeat center center;
+    background-size: cover;
+}
+
+.experience-section {
+    background: url('images/rockclimbing.png') no-repeat center center;
+    background-size: cover;
+}
+
+.projects-section {
+    background: url('images/kayaking.png') no-repeat center center;
+    background-size: cover;
+}
+
+.skills-section {
+    background: url('images/juanita-4.png') no-repeat center center;
+    background-size: cover;
+}
+
+.contact-section {
+    background: url('images/juanita-2.png') no-repeat center center;
+    background-size: cover;
 }
