@@ -9,15 +9,21 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav  class="navbar h-nav-resp">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blogs</a></li>
             </ul>
         </nav>
+        <div id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </header>
     <main>
         <section id="home" class="section home-section">
@@ -177,10 +183,42 @@
             </div>
         </section>
     </main>
-    <!-- <footer>
+
+<!-- blog section -->
+<section id="blog" class="section blog-section">
+    <div class="container">
+        <h2>Blog</h2>
+        <p>Welcome to my blog! Here, I share my thoughts on AI, technology, machine learning, and more.</p>
+
+        <!-- Search bar -->
+        <input type="text" id="blogSearch" placeholder="Search blog posts..." onkeyup="searchBlogs()" class="blog-search-bar">
+
+        <!-- Blog Post Entries -->
+        <div class="blog-post" data-title="How Generative AI is Shaping the Future" data-content="Generative AI is revolutionizing industries from content creation to business automation. In this post, I discuss how AI is changing the way we work and live.">
+            <h3><a href="#post1">How Generative AI is Shaping the Future</a></h3>
+            <p>Generative AI is revolutionizing industries from content creation to business automation. In this post, I discuss how AI is changing the way we work and live.</p>
+            <a href="#post1">Read More</a>
+        </div>
+        <div class="blog-post" data-title="The Future of NLP: Trends to Watch" data-content="Natural Language Processing (NLP) is evolving rapidly. In this article, I explore the latest trends in NLP and their potential applications in various sectors.">
+            <h3><a href="#post2">The Future of NLP: Trends to Watch</a></h3>
+            <p>Natural Language Processing (NLP) is evolving rapidly. In this article, I explore the latest trends in NLP and their potential applications in various sectors.</p>
+            <a href="#post2">Read More</a>
+        </div>
+        <div class="blog-post" data-title="My Experience with OpenAI's GPT-4" data-content="In this post, I dive into my experience using GPT-4 for various tasks, from content generation to code completion, and the potential it has to change the landscape of AI.">
+            <h3><a href="#post3">My Experience with OpenAI's GPT-4</a></h3>
+            <p>In this post, I dive into my experience using GPT-4 for various tasks, from content generation to code completion, and the potential it has to change the landscape of AI.</p>
+            <a href="#post3">Read More</a>
+        </div>
+    </div>
+</section>
+
+    
+    <footer>
         <div class="container">
             <p>&copy; 2024 Abhilash Srivastava. All rights reserved.</p>
         </div>
-    </footer> -->
+    </footer>
 </body>
+<script src="script.js"></script>
+
 </html>
