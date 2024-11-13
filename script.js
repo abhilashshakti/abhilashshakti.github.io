@@ -1,8 +1,6 @@
 let burger = document.getElementById('burger');
 let navbar = document.querySelector('.navbar');
-
 burger.addEventListener('click',()=>{
-    // navbar.classList.toggle('v-class-resp');
     navbar.classList.toggle('h-nav-resp')
     console.log("clicked")
 })
@@ -22,3 +20,10 @@ function searchBlogs() {
         }
     });
 }
+
+let typed = new Typed(".auto-input", {
+    strings: ["an AI Enthusiast.", "a Technical Geek.","a Music Lover.","a Passionate Developer."],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
+})

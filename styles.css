@@ -44,6 +44,11 @@ nav ul li a:hover {
     color: #bdc3c7;
 }
 
+.red {
+    color: #ff014f;
+}
+
+
 /* Section Styling */
 .section {
     position: relative;
@@ -81,7 +86,7 @@ h1, h2 {
     color: #ecf0f1;
     margin: 0;
     padding-bottom: 10px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 p, ul {
@@ -291,13 +296,12 @@ footer {
     }
     .h-nav-resp{
         transition: all 0.7s;
-        height: 70px;
+        height: 40px;
         opacity: 0;
     }
     nav ul {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-left: 10px;
     }
 
     nav ul li {
