@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form handling
+    // Contact form handling with Formspree
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
@@ -61,22 +61,37 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             
             try {
-                // Simulate form submission (replace with actual backend integration)
-                await new Promise(resolve => setTimeout(resolve, 1500));
+                // Submit form to Formspree
+                const formData = new FormData(contactForm);
                 
-                // Show success message
-                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                submitBtn.style.backgroundColor = 'var(--success-color)';
+                // Submit form to Formspree
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
                 
-                // Reset form
-                contactForm.reset();
-                
-                // Show success alert
-                alert('Thank you for your message! I\'ll get back to you soon.');
+                if (response.ok) {
+                    // Show success message
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    submitBtn.style.backgroundColor = 'var(--success-color)';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Show success alert
+                    alert('Thank you for your message! I\'ll get back to you soon.');
+                } else {
+                    throw new Error('Form submission failed');
+                }
                 
             } catch (error) {
                 console.error('Form submission error:', error);
-                alert('There was an error submitting your message. Please try again or contact me directly.');
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error';
+                submitBtn.style.backgroundColor = '#dc3545';
+                alert('There was an error submitting your message. Please try again or contact me directly at abhilash.shakti@gmail.com');
             } finally {
                 // Reset button after 3 seconds
                 setTimeout(() => {
@@ -158,4 +173,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 });
 
-// All Typed.js configuration is now handled in the DOMContentLoaded event listener above

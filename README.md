@@ -35,7 +35,6 @@
 ```
 abhilashsri.in/
 ├── 📄 index.html          # Main landing page
-├── 📄 blog.html           # Blog page (currently hidden)
 ├── 📄 contact.html        # Contact information
 ├── 🎨 styles.css          # Main stylesheet
 ├── ⚡ script.js           # JavaScript functionality
