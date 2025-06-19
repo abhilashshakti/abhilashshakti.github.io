@@ -2,7 +2,6 @@
 
 [![Website](https://img.shields.io/website-up-down-green-red/https/abhilashsri.in.svg)](https://abhilashsri.in)
 [![GitHub last commit](https://img.shields.io/github/last-commit/abhilashshakti/abhilashshakti.github.io)](https://github.com/abhilashshakti/abhilashshakti.github.io/commits/main)
-[![License](https://img.shields.io/github/license/abhilashshakti/abhilashshakti.github.io)](LICENSE)
 
 > A modern, responsive personal portfolio website showcasing my journey as an AI Engineer, Machine Learning Researcher, and Full-Stack Developer.
 
@@ -113,11 +112,11 @@ The website is fully responsive and tested across:
 
 ## 🔄 Recent Updates
 
-- **2024**: Complete website redesign with modern, professional styling
-- **2024**: Improved mobile responsiveness and navigation
-- **2024**: Updated resume to April 2025 version
-- **2024**: Enhanced user experience and visual hierarchy
-- **2024**: Added proper gitignore and project documentation
+- **2025**: Complete website redesign with modern, professional styling
+- **2025**: Improved mobile responsiveness and navigation
+- **2025**: Updated resume to April 2025 version
+- **2025**: Enhanced user experience and visual hierarchy
+- **2025**: Added proper gitignore and project documentation
 
 ## 🤝 Connect With Me
 
@@ -131,18 +130,14 @@ The website is fully responsive and tested across:
 - **Mobile-Friendly**: Google Mobile-Friendly Test Passed
 - **Cross-Browser Compatible**: Chrome, Firefox, Safari, Edge
 
-## 📝 License
+## 🙏 Credits
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- Design inspiration from modern portfolio websites
-- Icons provided by [Font Awesome](https://fontawesome.com/)
-- Typography by [Google Fonts](https://fonts.google.com/)
+- Icons by [Font Awesome](https://fontawesome.com/)
+- Typography by [Google Fonts (Inter)](https://fonts.google.com/)
+- Hosted on [GitHub Pages](https://pages.github.com/)
 
 ---
 
-⭐ **If you found this helpful, please consider giving it a star!**
+**© 2025 Abhilash Srivastava. All rights reserved.**
 
-*Last updated: December 2024*
+*Portfolio website built with modern web technologies and deployed on GitHub Pages.*
