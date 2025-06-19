@@ -3,197 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhilash Srivastava - Personal Website</title>
+    <title>Abhilash Srivastava - AI Engineer & Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
-    <div class="wrapper">
-        <header class=" header hed">
-            <nav  class="navbar h-nav-resp">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <!-- <li><a href="#projects">Projects</a></li> -->
-                    <li><a href="#skills">Skills</a></li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
-                    <!-- <li><a href="/blog.html">Blogs</a></li> -->
-                    <li><a href="docs/Abhilash_Srivastava_ML_Oct2024.pdf" target="_blank">CV</a></li>
-                </ul>
-            </nav>
-            <div id="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+    <header class="header">
+        <nav class="navbar h-nav-resp">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="docs/Abhilash_Srivastava_ML_Apr2025.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+        <div id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section home-section">
+            <div class="container">
+                <img src="images/profile.png" alt="Abhilash Srivastava" class="profile-photo-large">
+                <h1>Hi, I'm <span class="name">Abhilash Srivastava</span></h1>
+                <h2 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--text-secondary); font-weight: 400;">
+                    <span class="auto-input"></span>
+                </h2>
+                
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <p>I specialize in building <strong>Generative AI applications</strong> with a focus on Natural Language Processing (NLP), Machine Learning, Search, and Recommender Systems.</p>
+                    
+                    <p>Currently leading conversation-focused machine learning initiatives at <strong>Apollo.io</strong>, where I develop 0-to-1 sales tech products that drive revenue and innovation.</p>
+                    
+                    <p>Previously delivered high-impact, consumer-facing projects at <strong>Meta</strong>, <strong>Microsoft</strong>, <strong>Yelp</strong>, and <strong>Samsung Research</strong> spanning diverse domains including Ads Integrity, Search Engines, Content Understanding, and IoT.</p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="https://github.com/abhilashshakti" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhilash-srivastava/" class="contact-link" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:abhilash.shakti@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://discuss.pytorch.org/u/abhilash_srivastava/summary" class="contact-link" target="_blank">
+                        <i class="fab fa-python"></i> PyTorch
+                    </a>
+                </div>
             </div>
-        </header>
-        <main>
-            <section id="home" class="section home-section">
-                <div class="container">
-                    <img src="images/profile.png" alt="Profile Photo" class="profile-photo-large">
-                    <h1>Hi, I’m <span class="name">Abhilash Srivastava</span> <br> I am <span class="auto-input"></span></h1>
-                    <p>I specialize in building Generative AI applications with a focus on Natural Language Processing (NLP), Machine Learning, Search, and Recommender Systems. Currently, I lead conversation focused machine learning initiatives at Apollo.io, where I develop 0-to-1 sales tech products that drive revenue and innovation.</p>
-                    <p>Previously, I delivered high-impact, consumer-facing projects at Meta, Microsoft, Yelp, and Samsung Research. My work spans diverse domains, including Ads Integrity, Search Engines, Content Understanding, and IoT. At Meta, I developed fraud detection systems that improved Facebook Ads' revenue, while at Microsoft, I enhanced Search through Query Understanding and Natural Language Understanding (NLU). Additionally, I contribute to the AI4A (AI for Accessibility) Grants committee and am a reviewer for MLADS (Microsoft ML and Data Science Conference).</p>
-                    <p>Throughout my career, I've secured multiple patents and published papers in international conferences. I’m passionate about EdTech and MOOCs, and I actively engage with the Coursera and PyTorch communities.</p>
-                    <p>Let's connect if you’re interested in AI, EdTech, or exploring innovative machine-learning solutions!</p>
-                    <p>PyTorch Contributions: <a href="https://discuss.pytorch.org/u/abhilash_srivastava/summary">https://discuss.pytorch.org/u/abhilash_srivastava/summary</a></p>
-                    <p>GitHub: <a href="https://github.com/abhilashshakti">github.com/abhilashshakti</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/abhilash-srivastava/">linkedin.com/in/abhilash-srivastava</a></p>
-                    <p>Contact: <a href="mailto:abhilash.shakti@gmail.com">abhilash.shakti@gmail.com</a></p>
-                </div>
-            </section>
-            <section id="experience" class="section experience-section">
-                <div class="container">
-                    <h2>Experience</h2>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div class="experience-left">
-                                <img src="images/apollo-logo.png" alt="Apollo.io Logo" class="company-logo">
-                                <div class="experience-details">
-                                    <h3>Apollo.io</h3>
-                                    <h4>Senior ML Engineer</h4>
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <p>Aug 2023 - Present</p>
+        </section>
+
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="text-center">Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/apollo-logo.png" alt="Apollo.io" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Apollo.io</h3>
+                                <h4>Senior ML Engineer</h4>
                             </div>
                         </div>
-                        <p>Remote</p>
-                        <ul>
-                            <li>Conversational AI: Generate insights and build agents for Apollo using LLMs.</li>
-                            <li>Conversational AI: Improve email quality and build chat interfaces.</li>
-                            <li>Search and recommendation for enterprise users.</li>
-                            <li>Generative AI at Apollo</li>
-                            <li>Favorite tech tools: Github Copilot, LLMs (OpenAI, Gemini, Perplexity), Humanloop, Snowflake, Databricks, Airflow</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div class="experience-left">
-                                <img src="images/meta-logo.png" alt="Meta Logo" class="company-logo">
-                                <div class="experience-details">
-                                    <h3>Meta</h3>
-                                    <h4>Senior ML Engineer</h4>
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <p>Apr 2022 - Aug 2023</p>
-                            </div>
+                        <div class="experience-right">
+                            <p>Aug 2023 - Present</p>
                         </div>
-                        <p>Bellevue, Washington, United States</p>
-                        <ul>
-                            <li>Detecting fraud, cloaking and malicious ads using state-of-the-art machine learning and deep learning techniques. Over 50k malicious accounts blocked every day and $70M saved for Facebook every month.</li>
-                            <li>Analyzing large scale user-engagement data to understand policy-violating clicks and false-discovery rate to improve model transparency. Build high quality Hive pipelines for training data and human labeling queues.</li>
-                            <li>Working in a high-speed team (Ads org) of ML engineers, research scientists, data engineers and data scientists to launch several models every month.</li>
-                            <li>Other responsibilities include on-call rotations, graceful model rollouts, user-privacy protection, roadmap planning, documentation, XFN collaborations, interviewing candidates and boot-camp mentoring.</li>
-                        </ul>
                     </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div class="experience-left">
-                                <img src="images/microsoft-logo.png" alt="Microsoft Logo" class="company-logo">
-                                <div class="experience-details">
-                                    <h3>Microsoft</h3>
-                                    <h4>Software Engineer</h4>
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <p>May 2019 - Mar 2022</p>
-                            </div>
-                        </div>
-                        <p>Bellevue, Washington</p>
-                        <ul>
-                            <li>Trained the first DL model (multi-lingual) for enhancing the CTR@1 using enterprise data. Initial improvement of ~4% (across different regions).</li>
-                            <li>Building ranker models and QU models to improve search results for enterprise users in 10+ geo locations and 15+ languages</li>
-                            <li>Built a Language Detection model to support 100+ languages using student-teacher distillation. Teacher model: Roberta-Large as the pretrained model and fine-tuned using Bing query log data [mix of supervised + semi-supervised data]. Student model: char-CNN based model. This Language Detection model will power Search, Relevance, Maps and Office at Microsoft.</li>
-                            <li>Scaling a unified multi-language model (to 100+ languages) for domain classification, intent classification and slot tagging by fine-tuning and pre-training a Universal Encoder (Unicoder) model.</li>
-                            <li>Responsible AI champ for DTP (Digital Transformation Platform)</li>
-                            <li>Reviewer at Microsoft MLADS (Machine Learning & Data Sciences Conference).</li>
-                            <li>Reviewer for Microsoft AI for Accessibility (AI4A).</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div class="experience-left">
-                                <img src="images/yelp-logo.png" alt="Yelp Logo" class="company-logo">
-                                <div class="experience-details">
-                                    <h3>Yelp</h3>
-                                    <h4>Software Engineering Intern</h4>
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <p>Jun 2018 - Sep 2018</p>
-                            </div>
-                        </div>
-                        <p>San Francisco Bay Area</p>
-                        <ul>
-                            <li>NER (Named Entity Recognition) to improve the "Popular Dishes" recommendations served at restaurants.</li>
-                            <li>Revamp Yelp Android app with inline text expansion, media carousel and biz owner replies.</li>
-                            <li>Android app performance improvement by the reduction in GPU rendering time and CPU usage</li>
-                            <li>Hackathon: One-shot personalized restaurant recommendation</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div class="experience-left">
-                                <img src="images/samsung-logo.png" alt="Samsung Logo" class="company-logo">
-                                <div class="experience-details">
-                                    <h3>Samsung Electronics</h3>
-                                    <h4>Senior Software Engineer</h4>
-                                </div>
-                            </div>
-                            <div class="experience-right">
-                                <p>Jul 2014 - Aug 2017</p>
-                            </div>
-                        </div>
-                        <p>Bengaluru Area, India</p>
-                        <ul>
-                            <li>End to end development of the Music module of Samsung Carmode Android Application.</li>
-                            <li>Worked in South Korea and interacted closely with the testing team in Germany & China and development team in India for the successful commercialization of Carmode for Samsung NOTE5, S7, NOTE7 and S8.</li>
-                            <li>Assisted in enabling voice support through integration of Samsung Voice inside Carmode.</li>
-                            <li>Worked as an Android Developer in Samsung School v2.0 and Samsung Education SDK (Intelligence Division).</li>
-                            <li>Single-handedly developed the Screen Sharing feature for student-teacher interaction in a smart classroom, through muxing of video and audio streams from MediaCodecs and streaming using Real Time Protocol.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- <section id="projects" class="section projects-section">
-                <div class="container">
-                    <h2>Projects</h2>
-                    <p>Here are some of my projects...</p>
-                </div>
-            </section> -->
-            <section id="skills" class="section skills-section">
-                <div class="container">
-                    <h2>Skills</h2>
+                    <p>Remote</p>
                     <ul>
-                        <li>Natural Language Processing (NLP)</li>
-                        <li>Machine Learning</li>
-                        <li>Search and Recommender Systems</li>
-                        <li>Fraud Detection</li>
-                        <li>Query Understanding</li>
-                        <li>Natural Language Understanding (NLU)</li>
-                        <li>EdTech and MOOCs</li>
+                        <li><strong>Conversational AI:</strong> Generate insights and build agents for Apollo using LLMs</li>
+                        <li><strong>Email Intelligence:</strong> Improve email quality and build chat interfaces</li>
+                        <li><strong>Enterprise Solutions:</strong> Search and recommendation systems for enterprise users</li>
+                        <li><strong>Tech Stack:</strong> GitHub Copilot, LLMs (OpenAI, Gemini, Perplexity), Humanloop, Snowflake, Databricks, Airflow</li>
                     </ul>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/abhilash-srivastava"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/abhilashsri7"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/abhilashshakti"><i class="fab fa-github"></i></a>
-                    <a href="mailto:abhilash.shakti@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-                <p>&copy; 2024 Abhilash Srivastava. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script>
 
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/meta-logo.png" alt="Meta" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Meta</h3>
+                                <h4>Senior ML Engineer</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>Apr 2022 - Aug 2023</p>
+                        </div>
+                    </div>
+                    <p>Bellevue, Washington</p>
+                    <ul>
+                        <li><strong>Fraud Detection:</strong> Detecting fraud, cloaking and malicious ads using state-of-the-art ML and deep learning techniques</li>
+                        <li><strong>Impact:</strong> Over 50k malicious accounts blocked daily and $70M saved for Facebook monthly</li>
+                        <li><strong>Data Analysis:</strong> Analyzing large-scale user-engagement data to understand policy-violating clicks and improve model transparency</li>
+                        <li><strong>Infrastructure:</strong> Built high-quality Hive pipelines for training data and human labeling queues</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/microsoft-logo.png" alt="Microsoft" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Microsoft</h3>
+                                <h4>Software Engineer</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>May 2019 - Mar 2022</p>
+                        </div>
+                    </div>
+                    <p>Bellevue, Washington</p>
+                    <ul>
+                        <li><strong>Deep Learning:</strong> Trained the first DL model (multi-lingual) for enhancing CTR@1 using enterprise data (~4% improvement)</li>
+                        <li><strong>Search Enhancement:</strong> Building ranker models and QU models for enterprise users in 10+ geo locations and 15+ languages</li>
+                        <li><strong>Language Detection:</strong> Built a Language Detection model supporting 100+ languages using student-teacher distillation</li>
+                        <li><strong>Responsible AI:</strong> Responsible AI champion for DTP (Digital Transformation Platform)</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/yelp-logo.png" alt="Yelp" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Yelp</h3>
+                                <h4>Software Engineering Intern</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>Jun 2018 - Sep 2018</p>
+                        </div>
+                    </div>
+                    <p>San Francisco Bay Area</p>
+                    <ul>
+                        <li><strong>NER Implementation:</strong> Named Entity Recognition to improve "Popular Dishes" recommendations</li>
+                        <li><strong>Android Development:</strong> Revamped Yelp Android app with inline text expansion and media carousel</li>
+                        <li><strong>Performance:</strong> Android app performance improvement through GPU rendering and CPU optimization</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="images/samsung-logo.png" alt="Samsung" class="company-logo">
+                            <div class="experience-details">
+                                <h3>Samsung Electronics</h3>
+                                <h4>Senior Software Engineer</h4>
+                            </div>
+                        </div>
+                        <div class="experience-right">
+                            <p>Jul 2014 - Aug 2017</p>
+                        </div>
+                    </div>
+                    <p>Bengaluru, India</p>
+                    <ul>
+                        <li><strong>Carmode Development:</strong> End-to-end development of Music module for Samsung Carmode Android Application</li>
+                        <li><strong>Global Collaboration:</strong> Worked across South Korea, Germany, China, and India for successful commercialization</li>
+                        <li><strong>Voice Integration:</strong> Assisted in enabling voice support through Samsung Voice integration</li>
+                        <li><strong>Education Platform:</strong> Developed Screen Sharing feature for Samsung School v2.0 using Real Time Protocol</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="text-center">Core Skills & Technologies</h2>
+                <ul>
+                    <li>Natural Language Processing</li>
+                    <li>Machine Learning</li>
+                    <li>Generative AI & LLMs</li>
+                    <li>Deep Learning</li>
+                    <li>Search & Recommender Systems</li>
+                    <li>Fraud Detection</li>
+                    <li>Python & PyTorch</li>
+                    <li>Data Engineering</li>
+                    <li>MLOps</li>
+                    <li>Android Development</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="text-center">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Conversational AI Platform</h3>
+                        <p>Built end-to-end conversational AI system using LLMs for enterprise sales automation, improving lead qualification efficiency by 40%.</p>
+                        <div class="project-tags">
+                            <span class="tag">LLMs</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Multi-lingual Search Engine</h3>
+                        <p>Developed deep learning models for query understanding and ranking, supporting 15+ languages with significant CTR improvements.</p>
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Search</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Fraud Detection System</h3>
+                        <p>Implemented ML pipeline for detecting malicious ads and fraud, processing millions of ads daily and saving $70M+ monthly.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Fraud Detection</span>
+                            <span class="tag">Big Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="text-center">Let's Connect</h2>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem;">
+                    Interested in AI, EdTech, or exploring innovative machine learning solutions? I'd love to hear from you.
+                </p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abhilash-srivastava" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/abhilashsri7" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/abhilashshakti" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:abhilash.shakti@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Abhilash Srivastava. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
 </html>
