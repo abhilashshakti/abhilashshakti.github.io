@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Typed.js animation for the home section
     const typed = new Typed('.auto-input', {
         strings: [
-            'Machine Learning Engineer',
-            'AI Researcher',
-            'Problem Solver',
-            'Full-Stack Developer'
+            'I build search engines',
+            'I build conversational AI',
+            'I develop LLM applications',
+            'I solve complex ML problems',
+            'I create intelligent systems'
         ],
         typeSpeed: 50,
         backSpeed: 30,
