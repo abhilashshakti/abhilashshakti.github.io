@@ -132,7 +132,7 @@
             <textarea id="message" name="message" rows="5" required></textarea>
         </div>
         <input type="hidden" name="_subject" value="New message from abhilashsri.in">
-        <input type="hidden" name="_next" value="https://abhilashsri.in/contact.html">
+        <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="submit-btn">Send Message</button>
     </form>
 </div>
@@ -168,11 +168,10 @@
             submitBtn.disabled = true;
             
             try {
-                // Submit form to Formspree
+                // Submit form to Formspree using proper configuration
                 const formData = new FormData(contactForm);
                 
-                // Submit form to Formspree
-                const response = await fetch(contactForm.action, {
+                const response = await fetch('https://formspree.io/f/xnnvbqee', {
                     method: 'POST',
                     body: formData,
                     headers: {
@@ -180,10 +179,12 @@
                     }
                 });
                 
+                const result = await response.json();
+                
                 if (response.ok) {
                     // Show success message
                     submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                    submitBtn.style.backgroundColor = '#4CAF50';
+                    submitBtn.style.backgroundColor = '#22c55e';
                     
                     // Reset form
                     contactForm.reset();
@@ -191,14 +192,20 @@
                     // Show success alert
                     alert('Thank you for your message! I\'ll get back to you soon.');
                 } else {
-                    throw new Error('Form submission failed');
+                    console.error('Formspree error:', result);
+                    throw new Error(`Form submission failed: ${result.error || 'Unknown error'}`);
                 }
                 
             } catch (error) {
                 console.error('Form submission error:', error);
-                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error';
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error - Try Again';
                 submitBtn.style.backgroundColor = '#dc3545';
-                alert('There was an error submitting your message. Please try again or contact me directly at abhilash.shakti@gmail.com');
+                
+                // Fallback: Use native form submission
+                setTimeout(() => {
+                    alert('There was an error with the AJAX submission. The form will now submit normally.');
+                    contactForm.submit();
+                }, 2000);
             } finally {
                 // Reset button after 3 seconds
                 setTimeout(() => {

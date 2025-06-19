@@ -61,11 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             
             try {
-                // Submit form to Formspree
+                // Submit form to Formspree using proper configuration
                 const formData = new FormData(contactForm);
                 
-                // Submit form to Formspree
-                const response = await fetch(contactForm.action, {
+                const response = await fetch('https://formspree.io/f/xnnvbqee', {
                     method: 'POST',
                     body: formData,
                     headers: {
@@ -73,10 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 
+                const result = await response.json();
+                
                 if (response.ok) {
                     // Show success message
                     submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                    submitBtn.style.backgroundColor = 'var(--success-color)';
+                    submitBtn.style.backgroundColor = '#22c55e';
                     
                     // Reset form
                     contactForm.reset();
@@ -84,20 +85,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Show success alert
                     alert('Thank you for your message! I\'ll get back to you soon.');
                 } else {
-                    throw new Error('Form submission failed');
+                    console.error('Formspree error:', result);
+                    throw new Error(`Form submission failed: ${result.error || 'Unknown error'}`);
                 }
                 
             } catch (error) {
                 console.error('Form submission error:', error);
-                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error';
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error - Try Again';
                 submitBtn.style.backgroundColor = '#dc3545';
-                alert('There was an error submitting your message. Please try again or contact me directly at abhilash.shakti@gmail.com');
+                
+                // Fallback: Use native form submission
+                setTimeout(() => {
+                    alert('There was an error with the AJAX submission. The form will now submit normally.');
+                    contactForm.submit();
+                }, 2000);
             } finally {
                 // Reset button after 3 seconds
                 setTimeout(() => {
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
-                    submitBtn.style.backgroundColor = 'var(--primary-color)';
+                    submitBtn.style.backgroundColor = '';
                 }, 3000);
             }
         });
