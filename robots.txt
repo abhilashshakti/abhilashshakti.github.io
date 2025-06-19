@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://abhilashsri.in/sitemap.xml
+
+# Block access to admin or sensitive areas (none currently)
+# Disallow: /admin/
+
+# Allow all images
+Allow: /images/
+
+# Allow CSS and JS files
+Allow: /*.css$
+Allow: /*.js$ 
