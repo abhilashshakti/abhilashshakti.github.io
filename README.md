@@ -1,13 +1,13 @@
 # 🚀 Abhilash Srivastava - Personal Portfolio Website
 
-[![Website](https://img.shields.io/website-up-down-green-red/https/abhilashshakti.github.io.svg)](https://abhilashshakti.github.io)
+[![Website](https://img.shields.io/website-up-down-green-red/https/abhilashsri.in.svg)](https://abhilashsri.in)
 [![GitHub last commit](https://img.shields.io/github/last-commit/abhilashshakti/abhilashshakti.github.io)](https://github.com/abhilashshakti/abhilashshakti.github.io/commits/main)
 [![License](https://img.shields.io/github/license/abhilashshakti/abhilashshakti.github.io)](LICENSE)
 
 > A modern, responsive personal portfolio website showcasing my journey as an AI Engineer, Machine Learning Researcher, and Full-Stack Developer.
 
 ## 🌐 Live Website
-**[Visit abhilashshakti.github.io](https://abhilashshakti.github.io)**
+**[Visit abhilashsri.in](https://abhilashsri.in)**
 
 ---
 
@@ -33,7 +33,7 @@
 ## 🏗️ Project Structure
 
 ```
-abhilashshakti.github.io/
+abhilashsri.in/
 ├── 📄 index.html          # Main landing page
 ├── 📄 blog.html           # Blog page (currently hidden)
 ├── 📄 contact.html        # Contact information
@@ -125,7 +125,6 @@ The website is fully responsive and tested across:
 - **💼 LinkedIn**: [Abhilash Srivastava](https://www.linkedin.com/in/abhilash-srivastava)
 - **🐙 GitHub**: [abhilashshakti](https://github.com/abhilashshakti)
 - **📧 Email**: [abhilash.shakti@gmail.com](mailto:abhilash.shakti@gmail.com)
-- **📷 Instagram**: [@abhilashsri7](https://www.instagram.com/abhilashsri7)
 
 ## 📈 Performance
 
